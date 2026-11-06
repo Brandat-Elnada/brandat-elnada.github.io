@@ -1,0 +1,180 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Your Name – Links</title>
+
+    <!-- Font + Icons -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+
+    <style>
+      /* ---------- Reset ---------- */
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      /* ---------- Page background ---------- */
+      body {
+        min-height: 100vh;
+        font-family: "Inter", system-ui, sans-serif;
+        color: #e8e8ee;
+        background:
+          radial-gradient(
+            circle at 15% 85%,
+            rgba(60, 50, 140, 0.25),
+            transparent 45%
+          ),
+          radial-gradient(
+            circle at 85% 70%,
+            rgba(140, 40, 60, 0.22),
+            transparent 45%
+          ),
+          #0b0b0f;
+        display: flex;
+        justify-content: center;
+        padding: 48px 20px;
+      }
+
+      /* ---------- Container ---------- */
+      .container {
+        width: 100%;
+        max-width: 420px;
+        text-align: center;
+      }
+
+      /* ---------- Profile ---------- */
+      .avatar {
+        width: 150px; /* غيّر الرقم ده عشان تكبّر أو تصغّر الدايرة */
+        height: 150px;
+        margin: 0 auto 24px;
+        border-radius: 50%;
+        border: 3px solid #5b5bf0;
+        background: #15151c;
+        overflow: hidden; /* بيقص الصورة على شكل الدايرة */
+      }
+
+      .avatar img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover; /* بيملّا الدايرة من غير ما الصورة تتمطّ */
+        display: block;
+      }
+      h1 {
+        font-size: 24px;
+        font-weight: 700;
+        margin-bottom: 8px;
+      }
+
+      .bio {
+        font-size: 13px;
+        line-height: 1.6;
+        color: #8f8fa0;
+        max-width: 300px;
+        margin: 0 auto 32px;
+      }
+
+      /* ---------- Links ---------- */
+      .links {
+        display: flex;
+        flex-direction: column;
+        gap: 14px;
+      }
+
+      .link {
+        display: flex;
+        align-items: center;
+        gap: 14px;
+        padding: 16px 20px;
+        border-radius: 12px;
+        background: rgba(255, 255, 255, 0.05);
+        border: 1px solid rgba(255, 255, 255, 0.08);
+        color: #f0f0f5;
+        text-decoration: none;
+        font-size: 14px;
+        font-weight: 500;
+        transition:
+          transform 0.2s ease,
+          background 0.2s ease,
+          border-color 0.2s ease;
+      }
+
+      .link i {
+        width: 20px;
+        text-align: center;
+        font-size: 17px;
+      }
+
+      .link:hover,
+      .link:focus-visible {
+        background: rgba(255, 255, 255, 0.1);
+        border-color: rgba(120, 120, 255, 0.5);
+        transform: translateY(-2px);
+        outline: none;
+      }
+
+      @media (prefers-reduced-motion: reduce) {
+        .link {
+          transition: none;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <main class="container">
+      <!-- Replace with: <img class="avatar" src="me.jpg" alt="Your Name"> -->
+      <div class="avatar">
+        <img
+          src="WhatsApp Image 2026-11-06 at 10.31.45 AM.jpeg"
+          alt="Brandat ال ندا"
+        />
+      </div>
+
+      <h1>Brandat ال ندا</h1>
+
+      <nav class="links">
+        <a
+          class="link"
+          href="https://www.facebook.com/share/19FJyTeyis/?mibextid=wwXIfr"
+        >
+          <i class="fa-brands fa-facebook"></i> Facebook
+        </a>
+        <a
+          class="link"
+          href="https://www.instagram.com/brandat_abonada?cplk=MTczY24wbWxtOXd0Yw%3D%3D&utm_source=qr"
+          target="_blank"
+          rel="noopener"
+        >
+          <i class="fa-brands fa-instagram"></i> Instagram
+        </a>
+        <a
+          class="link"
+          href="https://whatsapp.com/channel/0029Vb9GOpPCcW4vG4aV0w0C"
+          target="_blank"
+          rel="noopener"
+        >
+          <i class="fa-brands fa-whatsapp"></i> WhatsApp
+        </a>
+        <a
+          class="link"
+          href="https://www.tiktok.com/@brandat111?_r=1&_t=ZS-9B9wzGNUrhM"
+          target="_blank"
+          rel="noopener"
+        >
+          <i class="fa-brands fa-tiktok"></i> TikTok
+        </a>
+      </nav>
+    </main>
+  </body>
+</html>
